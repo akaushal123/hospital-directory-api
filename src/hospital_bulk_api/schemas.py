@@ -16,3 +16,4 @@ class BulkResponse(BaseModel):
     processing_time_seconds: float
     batch_activated: bool
     hospitals: List[HospitalResult]
+

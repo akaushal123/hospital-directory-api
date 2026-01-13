@@ -35,3 +35,4 @@ class HospitalAPIClient:
             "PATCH",
             f"{BASE_URL}/hospitals/batch/{batch_id}/activate"
         )
+

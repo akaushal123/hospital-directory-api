@@ -3,3 +3,6 @@ uvicorn
 httpx
 python-multipart
 pydantic
+pytest
+pytest-asyncio
+anyio

@@ -3,9 +3,9 @@ import uuid
 import asyncio
 from typing import List
 
-from src.hospital_client import HospitalAPIClient
-from src.models import HospitalResult
-from src.progress_store import progress_store, failed_rows_store
+from .clients import HospitalAPIClient
+from .schemas import HospitalResult
+from .store import progress_store, failed_rows_store
 
 
 async def _create_single_hospital(
@@ -205,3 +205,4 @@ async def resume_bulk_hospitals(batch_id: str) -> dict:
         "batch_activated": batch_id not in failed_rows_store,
         "results": results
     }
+
